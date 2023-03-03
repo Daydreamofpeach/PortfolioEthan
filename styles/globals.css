@@ -6,27 +6,29 @@
 
 * {
   font-family: "Hind";
+    user-select: none;
+  -webkit-user-select: none;
+   -ms-user-select: none;
+  -moz-user-select: none;
+  animation-delay: 5s;
+  
+  
+
 }
+
+ 
+
+
+
 
 body {
   @apply dark:bg-black dark:text-white;
+
 }
 
-.gradient-circle {
-  position: absolute;
-  pointer-events: none;
-  z-index: 100;
-  top: -30px;
-  height: 40px;
-  width: 100vw;
-  opacity: 0.5;
-  filter: blur(40px);
-  background: radial-gradient(
-    circle,
-    rgba(248, 107, 223, 1) 0%,
-    rgba(107, 107, 248, 0.8) 100%
-  );
-}
+
+    
+
 .gradient-circle-bottom {
   position: absolute;
   pointer-events: none;
@@ -35,10 +37,10 @@ body {
   height: 30px;
   width: 100vw;
   opacity: 0.5;
-  filter: blur(40px);
+  filter: blur(400px);
   background: radial-gradient(
     circle,
-    rgba(248, 107, 223, 1) 0%,
+    rgb(218, 169, 7) 20%,
     rgba(107, 107, 248, 0.8) 100%
   );
 }
@@ -74,4 +76,10 @@ body {
   left: 0;
   background: inherit;
   border-radius: inherit;
+
+   
+  
 }
+
+
+
