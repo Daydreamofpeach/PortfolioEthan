@@ -13,7 +13,7 @@ import Cursor from "../../components/Cursor";
 import data from "../../data/portfolio.json";
 
 const BlogPost = ({ post }) => {
-  const [showEditor, setShowEditor] = useState(true);
+  const [showEditor, setShowEditor] = useState(false);
   const textOne = useRef();
   const textTwo = useRef();
   const router = useRouter();

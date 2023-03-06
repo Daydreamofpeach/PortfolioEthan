@@ -1,16 +1,16 @@
 {
-  "name": "Ethan James Design",
-  "headerTaglineOne": "Hello 🦄",
-  "headerTaglineTwo": "I'm Ethan James Cullen",
-  "headerTaglineThree": "Designer & Devloper",
-  "headerTaglineFour": " From Christchurch, New Zealand.",
+  "name": "Chetan",
+  "headerTaglineOne": "Hello 👋",
+  "headerTaglineTwo": "I'm Chetan Verma - curious",
+  "headerTaglineThree": "designer and devloper",
+  "headerTaglineFour": " based in New Delhi, India.",
   "showBlog": true,
   "darkMode": true,
   "socials": [
     {
       "id": "1",
       "title": "Github",
-      "link": "https://github.com/Daydreamofpeach"
+      "link": "https://github.com/chetanverma16"
     },
     {
       "id": "2",
@@ -22,8 +22,8 @@
       "title": "Twitter",
       "link": "https://twitter.com/realchetanverma"
     },
-
-    { "id": "5", "title": "Email", "link": "mailto:ethanjamescullen@outlook.com" }
+    { "id": "4", "title": "Blog", "link": "https://blog.chetanverma.com/" },
+    { "id": "5", "title": "Email", "link": "mailto:hello@chetanverma.com" }
   ],
   "projects": [
     {

@@ -6,10 +6,9 @@ import Button from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
 
-
 const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const router = useRouter();
-  const { theme, setTheme } = useTheme(false);
+  const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   const { name, showBlog, showResume } = data;
@@ -26,7 +25,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             <div className="flex items-center justify-between p-2 laptop:p-0">
               <h1
                 onClick={() => router.push("/")}
-                className="font-bold  p-2 laptop:p-0 link"
+                className="font-medium p-2 laptop:p-0 link"
               >
                 {name}.
               </h1>
@@ -49,7 +48,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
 
                 <Popover.Button>
                   <img
-                    className="h-5  "
+                    className="h-5"
                     src={`/images/${
                       !open
                         ? theme === "dark"
@@ -58,19 +57,18 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                         : theme === "light"
                         ? "cancel.svg"
                         : "cancel-white.svg"
-                      
                     }`}
                   ></img>
                 </Popover.Button>
               </div>
             </div>
             <Popover.Panel
-              className={`absolute  z-10 w-11/12 p-4 ${
-                theme === "dark" ? "bg-zinc-900" : "bg-white"
+              className={`absolute right-0 z-10 w-11/12 p-4 ${
+                theme === "dark" ? "bg-slate-800" : "bg-white"
               } shadow-md rounded-md`}
             >
               {!isBlog ? (
-                <div className="grid grid-cols-1 ">
+                <div className="grid grid-cols-1">
                   <Button onClick={handleWorkScroll}>Work</Button>
                   <Button onClick={handleAboutScroll}>About</Button>
                   {showBlog && (
@@ -79,7 +77,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   {showResume && (
                     <Button
                       onClick={() =>
-                        window.open("mailto:ethanjamescullen@outlook.com")
+                        window.open("mailto:hello@chetanverma.com")
                       }
                     >
                       Resume
@@ -87,9 +85,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
 
                   <Button
-                    onClick={() =>
-                      window.open("mailto:ethanjamescullen@outlook.com")
-                    }
+                    onClick={() => window.open("mailto:hello@chetanverma.com")}
                   >
                     Contact
                   </Button>
@@ -112,9 +108,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   )}
 
                   <Button
-                    onClick={() =>
-                      window.open("mailto:ethanjamescullen@outlook.com")
-                    }
+                    onClick={() => window.open("mailto:hello@chetanverma.com")}
                   >
                     Contact
                   </Button>
@@ -125,15 +119,13 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         )}
       </Popover>
       <div
-        className={` " bg-white border-y-turquoise-400 border-b-8  flex-row items-center   mob:hidden justify-between sticky ${
-          theme === "light" && "bg-white border-y-turquoise-400 border-b-8"
-        } ${
-          theme === "dark" && " border-y-gold-300 border-b-8 bg-zinc-900"
-        } dark:text-black top-0 z-10 tablet:flex`}
+        className={`mt-10 hidden flex-row items-center justify-between sticky ${
+          theme === "light" && "bg-white"
+        } dark:text-white top-0 z-10 tablet:flex`}
       >
         <h1
           onClick={() => router.push("/")}
-          className="font-medium cursor-pointer   mob:p-2 laptop:p-0"
+          className="font-medium cursor-pointer mob:p-2 laptop:p-0"
         >
           {name}.
         </h1>
@@ -147,15 +139,13 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             {showResume && (
               <Button
                 onClick={() => router.push("/resume")}
-                classes="first:ml-1  "
+                classes="first:ml-1"
               >
                 Resume
               </Button>
             )}
 
-            <Button
-              onClick={() => window.open("mailto:ethanjamescullen@outlook.com")}
-            >
+            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
               Contact
             </Button>
             {mounted && theme && data.darkMode && (
@@ -170,7 +160,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             )}
           </div>
         ) : (
-          <div className="flex ">
+          <div className="flex">
             <Button onClick={() => router.push("/")}>Home</Button>
             {showBlog && (
               <Button onClick={() => router.push("/blog")}>Blog</Button>
@@ -184,9 +174,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
               </Button>
             )}
 
-            <Button
-              onClick={() => window.open("mailto:ethanjamescullen@outlook.com")}
-            >
+            <Button onClick={() => window.open("mailto:hello@chetanverma.com")}>
               Contact
             </Button>
 
@@ -195,7 +183,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                 onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
               >
                 <img
-                  className="h-6 p-4"
+                  className="h-6"
                   src={`/images/${theme === "dark" ? "moon.svg" : "sun.svg"}`}
                 ></img>
               </Button>
