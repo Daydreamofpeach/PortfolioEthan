@@ -87,6 +87,7 @@ export async function getStaticProps({ params }) {
     "preview",
     "image",
     "content",
+    ""
   ]);
 
   return {

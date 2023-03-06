@@ -12,16 +12,9 @@
       "title": "Github",
       "link": "https://github.com/Daydreamofpeach"
     },
-    {
-      "id": "2",
-      "title": "LinkedIn",
-      "link": "https://www.linkedin.com/in/chetanverma7/"
-    },
-    {
-      "id": "3",
-      "title": "Twitter",
-      "link": "https://twitter.com/realchetanverma"
-    },
+  
+   
+  
 
     { "id": "5", "title": "Email", "link": "mailto:ethanjamescullen@outlook.com" }
   ],
@@ -72,26 +65,26 @@
   "services": [
     {
       "id": "1",
-      "title": "Art Direction",
-      "description": "We help with the creation and development of online advertising ideas, with particular focus on their visual appearance."
+      "title": "Ux Design",
+      "description": "Motivated to Develop and Implement outcomes that have User Experience as a fundamental part of the development process ."
     },
     {
       "id": "2",
       "title": "Branding",
-      "description": "We design key brand elements such as the logo, color scheme, typography, and other design components that makes your brand stand out from competitors."
+      "description": "Graphic and Digital Branding to reach the right audience and promote the values of the product."
     },
     {
       "id": "3",
       "title": "Web Design",
-      "description": "We build and optimize your online presence.  Website is the digital entry point into your business and a powerful revenue channel."
-    },
-    {
-      "id": "4",
-      "title": "3D Design",
-      "description": "We combine creative design and technical skills to build striking 3D visualisations that bring your project to life."
+      "description": "Web Development and Innovation, Creative Open Source 🦄✨ "
     }
+    
+     
+  
   ],
-  "aboutpara": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+  "aboutpara": "Christchurch, New Zealand based freshly graduated Web Developer. 
+Looking to expand my knowledge and coding skills.
+Currently Learning Full Stack t3 with Typescript, Nextjs and Tailwind.css",
   "resume": {
     "tagline": "👋  I'm a software engineer, product designer, and maker.",
     "description": "I have delivered world-class user experiences to millions of people. Well-versed with React, Javascript, and most of the Web frameworks.",

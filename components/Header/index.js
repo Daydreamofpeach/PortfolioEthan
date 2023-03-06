@@ -6,7 +6,6 @@ import Button from "../Button";
 // Local Data
 import data from "../../data/portfolio.json";
 
-
 const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
   const router = useRouter();
   const { theme, setTheme } = useTheme(false);
@@ -58,7 +57,6 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                         : theme === "light"
                         ? "cancel.svg"
                         : "cancel-white.svg"
-                      
                     }`}
                   ></img>
                 </Popover.Button>
@@ -74,7 +72,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
                   <Button onClick={handleWorkScroll}>Work</Button>
                   <Button onClick={handleAboutScroll}>About</Button>
                   {showBlog && (
-                    <Button onClick={() => router.push("/blog")}>Blog</Button>
+                    <Button onClick={() => router.push("/blog")}>Projects</Button>
                   )}
                   {showResume && (
                     <Button
@@ -125,11 +123,11 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
         )}
       </Popover>
       <div
-        className={` " bg-white border-y-turquoise-400 border-b-8  flex-row items-center   mob:hidden justify-between sticky ${
+        className={` "  shadow-2xl   rounded-b-md    border-b-8  flex-row items-center   mob:hidden  tiny:hidden justify-between   sticky ${
           theme === "light" && "bg-white border-y-turquoise-400 border-b-8"
         } ${
-          theme === "dark" && " border-y-gold-300 border-b-8 bg-zinc-900"
-        } dark:text-black top-0 z-10 tablet:flex`}
+          theme === "dark" && " bg-[#121211] border-y-gold-300 border-b-8    "
+        } dark:text-black top-0 z-50 tablet:flex`}
       >
         <h1
           onClick={() => router.push("/")}
@@ -142,7 +140,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
             <Button onClick={handleWorkScroll}>Work</Button>
             <Button onClick={handleAboutScroll}>About</Button>
             {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Blog</Button>
+              <Button onClick={() => router.push("/blog")}>Projects</Button>
             )}
             {showResume && (
               <Button
@@ -173,7 +171,7 @@ const Header = ({ handleWorkScroll, handleAboutScroll, isBlog }) => {
           <div className="flex ">
             <Button onClick={() => router.push("/")}>Home</Button>
             {showBlog && (
-              <Button onClick={() => router.push("/blog")}>Blog</Button>
+              <Button onClick={() => router.push("/blog")}>Projects</Button>
             )}
             {showResume && (
               <Button

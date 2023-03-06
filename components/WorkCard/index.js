@@ -3,17 +3,18 @@ import React from "react";
 const WorkCard = ({ img, name, description, onClick }) => {
   return (
     <div
-      className="overflow-hidden  rounded-lg p-2  laptop:p-4 first:ml-0 link"
+      className=" overflow-hidden rounded-lg p-2  first:ml-0 link"
       onClick={onClick}
     >
       <div
-        className="relative rounded-lg overflow-hidden    transition-all ease-out duration-300  mob:h-auto"
-        style={{ height: "400px"
+        className="relative rounded-lg overflow-hidden   transition-all ease-out duration-300   h-auto   mob:h-auto"
+        style={{ height: "auto"
+        
        }}
       >
         <img
           alt={name}
-          className="h-full w-full scale-75 shadow-2xl    hover:scale-100 transition-all ease-out duration-300"
+          className="    w-full   h-full scale-75 shadow-2xl    hover:scale-100 transition-all ease-out duration-300"
           src={img}
         ></img>
       </div>
