@@ -4,7 +4,10 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   darkMode: "class",
+
+ 
   
+    
   theme: {
     screens: {
       tiny: "220px",
@@ -317,6 +320,10 @@ module.exports = {
           '800': '#6a013a',
           '900': '#480024',
         },
+
+      
+        
+
         
    
     

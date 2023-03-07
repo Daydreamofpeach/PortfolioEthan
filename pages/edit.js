@@ -47,7 +47,7 @@ const Edit = () => {
           imageSrc:
             "https://images.unsplash.com/photo-1517479149777-5f3b1511d5ad?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MTAyfHxwYXN0ZWx8ZW58MHx8MHw%3D&auto=format&fit=crop&w=400&q=60",
 
-          url: "http://chetanverma.com/",
+          url: "",
         },
       ],
     });
@@ -104,7 +104,7 @@ const Edit = () => {
         {
           id: uuidv4(),
           title: "New Link",
-          link: "www.chetanverma.com",
+          link: "mailto:ethanjamescullen@outlook.com",
         },
       ],
     });
@@ -493,7 +493,7 @@ const Edit = () => {
               value={data.aboutpara}
               onChange={(e) => setData({ ...data, aboutpara: e.target.value })}
             ></textarea>
-          </div>
+          </div >
         )}
         {currentTabs === "SOCIAL" && (
           <div className="mt-10">
@@ -509,7 +509,7 @@ const Edit = () => {
                       Delete
                     </Button>
                   </div>
-                  <div className="flex items-center mt-5">
+                  <div className="flex  items-center mt-5">
                     <label className="w-1/5 text-lg opacity-50">Title</label>
                     <input
                       value={social.title}

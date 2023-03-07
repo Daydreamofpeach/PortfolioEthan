@@ -81,5 +81,43 @@ body {
   
 }
 
+ 
+  
+img {
+  --s: 320px;   /* the size of the image */
+  --b: 2px;     /* the border thickness*/
+  --g: 14px;    /* the gap */
+  --c: #012724b7; /* the color */
+  border-radius: 12px;
+ 
+
+  
+  width: var(--s);
+  aspect-ratio: 0.9;
+  outline: calc(var(--s)/2) solid    rgba(20, 1, 52, 0.545);
+  outline-offset: calc(var(--s)/-2);
+  cursor: pointer;
+  transition: .7s;
+}
+img:hover {
+  outline: var(--b) solid var(--c);
+  outline-offset: var(--g);
+  
+ 
+}
+
+img + img {
+  border-radius: 0%;
+}
 
 
+body {
+  margin: 8px;
+  min-height: 100vh;
+  display: grid;
+  grid-auto-flow: column;
+  gap: 50px;
+  place-content: center;
+  place-items: center;
+
+}
