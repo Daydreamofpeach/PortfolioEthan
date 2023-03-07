@@ -67,25 +67,25 @@ export default function Home() {
           <div className="mt-5">
             <h1
               ref={textOne}
-              className="text-3xl tablet:text-3xl laptop:text-3xl p-1 tablet:p-2  font-extrabold  w-4/5 mob:w-full laptop:w-4/5"
+              className="text-3xl tablet:text-4xl laptop:text-6xl p-1 tablet:p-2  font-extrabold  w-4/5 mob:w-full laptop:w-4/5"
             >
               {data.headerTaglineOne}
             </h1>
             <h1
               ref={textTwo}
-              className="text-xl tablet:text-3xl laptop:text-3xl laptopl:text-3xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-4xl tablet:text-4xl laptop:text-6xl  p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
               {data.headerTaglineTwo}
             </h1>
             <h1
               ref={textThree}
-              className="text-3xl tablet:text-4xl laptop:text-4xl laptopl:text-4xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-3xl tablet:text-4xl laptop:text-6xl  p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
               {data.headerTaglineThree}
             </h1>
             <h1
               ref={textFour}
-              className="text-2xl tablet:text-2xl laptop:text-2xl laptopl:text-xl p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
+              className="text-2xl tablet:text-3xl laptop:text-3xl  p-1 tablet:p-2 text-bold w-full laptop:w-4/5"
             >
               {data.headerTaglineFour}
             </h1>
@@ -94,13 +94,15 @@ export default function Home() {
           <Socials className="mt-2 laptop:mt-5" />
         </div>
         <div className="mt-10 laptop:mt-10 p-2 laptop:p-0" ref={workRef}>
-          <h1 className="text-2xl text-bold">Work.</h1>
+          <h1 className="text-2xl text-bold">Work & Deployed Projects.</h1>
 
           <div className="mt-5 grid grid-cols-1 tablet:grid-cols-2 gap-4">
             {data.projects.map((project) => (
               <WorkCard
                 key={project.id}
                 img={project.imageSrc}
+                
+                
                 name={project.title}
                 description={project.description}
                 onClick={() => window.open(project.url)}
@@ -110,8 +112,10 @@ export default function Home() {
         </div>
 
         <div className="mt-10 laptop:mt-30 p-2 laptop:p-0">
-          <h1 className="tablet:m-10 text-2xl text-bold">Services.</h1>
-          <div className="mt-5 tablet:m-10 grid grid-cols-1 laptop:grid-cols-2 gap-6">
+          <h1 className="tablet:m-10 text-4xl  font-bold  tablet:text-3xl laptop:text-4xl ">
+            Services.
+          </h1>
+          <div className="mt-5 tablet:m-20 grid grid-cols-1 laptop:grid-cols-2 gap-6">
             {data.services.map((service, index) => (
               <ServiceCard
                 key={index}
@@ -129,9 +133,11 @@ export default function Home() {
             </Link>
           </div>
         )}
-        <div className="mt-10 laptop:mt-40 p-2 laptop:p-0" ref={aboutRef}>
-          <h1 className="tablet:m-10 text-6xl text-bold">About.</h1>
-          <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-full laptop:w-3/5">
+        <div className="mt-10  hover:text-indigo-600    px-4  tablet:p-6 pb-12 p-2 laptop:p-12" ref={aboutRef}>
+          <h1 className=" text-4xl  font-bold   tablet:text-4xl laptop:text-4xl">
+            About.
+          </h1>
+          <p className="tablet:m-10 mt-2 text-xl laptop:text-3xl w-4/5 laptop:w-3/5">
             {data.aboutpara}
           </p>
         </div>
